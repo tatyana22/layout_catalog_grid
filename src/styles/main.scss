@@ -14,46 +14,38 @@ body {
 @import "_header.scss";
 @import "_catalog.scss";
 
+.catalog {
+  display: grid;
+  grid-template-columns: $cardWidth;
+  gap: 48px;
+  justify-content: center;
+  align-content: center;
+}
+
 @media (max-width: 487px) {
 
   .catalog {
-    display: grid;
     grid-template-columns: $cardWidth;
-    gap: 48px;
-    justify-content: center;
-    align-content: center;
   }
 }
 
 @media (min-width: 488px) {
 
   .catalog {
-    display: grid;
     grid-template-columns: repeat(2, $cardWidth);
-    gap: 48px;
-    justify-content: center;
-    align-content: center;
   }
 }
 
 @media (min-width: 768px) {
 
   .catalog {
-    display: grid;
     grid-template-columns: repeat(3, $cardWidth);
-    gap: 48px;
-    justify-content: center;
-    align-content: center;
   }
 }
 
 @media (min-width: 1024px) {
 
   .catalog {
-    display: grid;
     grid-template-columns: repeat(4, $cardWidth);
-    gap: 48px;
-    justify-content: center;
-    align-content: center;
   }
 }
