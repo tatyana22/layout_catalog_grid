@@ -22,13 +22,6 @@ body {
   align-content: center;
 }
 
-@media (max-width: 487px) {
-
-  .catalog {
-    grid-template-columns: $cardWidth;
-  }
-}
-
 @media (min-width: 488px) {
 
   .catalog {
